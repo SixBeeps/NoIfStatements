@@ -17,4 +17,12 @@ class MainClass {
 			break;
 		}
 	}
+
+	public static void IfElse(bool statement, Action invoke, Action invokeNot) {
+		for (;statement;) {
+			invoke.Invoke();
+			return;
+		}
+		invokeNot.Invoke();
+	}
 }
